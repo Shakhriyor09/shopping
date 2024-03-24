@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head_img {
+    width: 600px;
+    margin: 20px 0;
+}
+
+.tow img {
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.images {
+    width: 600px;
+}
+
+.circle {
+    border-bottom: 1.5px solid rgba(0, 0, 0, 0.139);
+    width: 100% !important;
+}
+
+.brands {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.brands p {
+    color: rgb(255, 142, 4);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.brands span {
+    color: black;
+    font-weight: 600;
+}
+
+.box-shop {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.box-shop img {
+    width: 200px;
+    height: auto;
+    object-fit: contain;
+}
+
+.box-shop p {
+    font-size: 24px !important;
+    font-weight: bold;
+}
+
+.box-shop .price {
+    color: rgb(255, 142, 4);
+}
+
+
+/* Loading */
+
+.lds-ellipsis {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+
+.lds-ellipsis div {
+
+    position: absolute;
+    top: 33px;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    background: #f40101;
+    animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+
+.lds-ellipsis div:nth-child(1) {
+    left: 8px;
+    animation: lds-ellipsis1 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(2) {
+    left: 8px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(3) {
+    left: 32px;
+    animation: lds-ellipsis2 0.6s infinite;
+}
+
+.lds-ellipsis div:nth-child(4) {
+    left: 56px;
+    animation: lds-ellipsis3 0.6s infinite;
+}
+
+@keyframes lds-ellipsis1 {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes lds-ellipsis3 {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0);
+    }
+}
+
+@keyframes lds-ellipsis2 {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(24px, 0);
+    }
+}
+.errmsg {
+    color: red;
+}
